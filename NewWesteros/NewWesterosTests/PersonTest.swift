@@ -35,7 +35,7 @@ class PersonTest: XCTestCase {
         lannisterImage = #imageLiteral(resourceName: "lannister.jpg")
         lannisterSigil = Sigil(image: lannisterImage, description: "Rampant Lion")
         lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Hear me roar!", url:URL(string:"http://awoiaf.westeros.org/index.php/House_Lannister")!)
-       tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannisterHouse)
+        tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannisterHouse)
     }
     
     override func tearDown() {
@@ -51,7 +51,6 @@ class PersonTest: XCTestCase {
         XCTAssertEqual(tyrion.fullName, "Tyrion Lannister")
     }
     
-    
     func testPersonEquality(){
         
         // Identidad
@@ -66,4 +65,13 @@ class PersonTest: XCTestCase {
         
     }
     
+    func testPersonHash() {
+        
+        XCTAssertNotNil(arya.hashValue)
+    }
+    
+    func testPersonComparison(){
+        
+        XCTAssertLessThan(arya, robb)
+    }
 }

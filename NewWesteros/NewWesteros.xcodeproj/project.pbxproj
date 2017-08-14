@@ -17,6 +17,16 @@
 		BAC1AE911F379C6D00D4D158 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE8E1F379C6D00D4D158 /* targaryenSmall.jpg */; };
 		BAC1AE941F3CE58C00D4D158 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE931F3CE58C00D4D158 /* Person.swift */; };
 		BAC1AE961F3F7D6700D4D158 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE951F3F7D6700D4D158 /* PersonTest.swift */; };
+		BAC1AE991F41D35F00D4D158 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE981F41D35F00D4D158 /* Repository.swift */; };
+		BAC1AEA01F4207D700D4D158 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE9E1F4207D700D4D158 /* HouseViewController.swift */; };
+		BAC1AEA11F4207D700D4D158 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE9F1F4207D700D4D158 /* HouseViewController.xib */; };
+		BAC1AEAC1F42098700D4D158 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AEAA1F42098700D4D158 /* MembersViewController.swift */; };
+		BAC1AEAD1F42098700D4D158 /* MembersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AEAB1F42098700D4D158 /* MembersViewController.xib */; };
+		BAC1AEB01F420AD900D4D158 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AEAE1F420AD900D4D158 /* WikiViewController.swift */; };
+		BAC1AEB11F420AD900D4D158 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AEAF1F420AD900D4D158 /* WikiViewController.xib */; };
+		BAC1AEB41F420BC900D4D158 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AEB21F420BC900D4D158 /* HousesViewController.swift */; };
+		BAC1AEB51F420BC900D4D158 /* HousesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AEB31F420BC900D4D158 /* HousesViewController.xib */; };
+		BAC1AEB71F420C9200D4D158 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AEB61F420C9200D4D158 /* UIKitExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		BAC1AE8E1F379C6D00D4D158 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
 		BAC1AE931F3CE58C00D4D158 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BAC1AE951F3F7D6700D4D158 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
+		BAC1AE981F41D35F00D4D158 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BAC1AE9E1F4207D700D4D158 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		BAC1AE9F1F4207D700D4D158 /* HouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
+		BAC1AEAA1F42098700D4D158 /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		BAC1AEAB1F42098700D4D158 /* MembersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersViewController.xib; sourceTree = "<group>"; };
+		BAC1AEAE1F420AD900D4D158 /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		BAC1AEAF1F420AD900D4D158 /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
+		BAC1AEB21F420BC900D4D158 /* HousesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
+		BAC1AEB31F420BC900D4D158 /* HousesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HousesViewController.xib; sourceTree = "<group>"; };
+		BAC1AEB61F420C9200D4D158 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +105,22 @@
 		BAC1AE661F377F5B00D4D158 /* NewWesteros */ = {
 			isa = PBXGroup;
 			children = (
+				BAC1AE971F41D34100D4D158 /* Data */,
 				BAC1AE921F379C7900D4D158 /* Resources */,
 				BAC1AE671F377F5B00D4D158 /* AppDelegate.swift */,
 				BAC1AE6E1F377F5B00D4D158 /* Assets.xcassets */,
 				BAC1AE701F377F5B00D4D158 /* LaunchScreen.storyboard */,
 				BAC1AE731F377F5B00D4D158 /* Info.plist */,
 				BAC1AE8B1F37939900D4D158 /* Models */,
+				BAC1AE9E1F4207D700D4D158 /* HouseViewController.swift */,
+				BAC1AE9F1F4207D700D4D158 /* HouseViewController.xib */,
+				BAC1AEAA1F42098700D4D158 /* MembersViewController.swift */,
+				BAC1AEAB1F42098700D4D158 /* MembersViewController.xib */,
+				BAC1AEAE1F420AD900D4D158 /* WikiViewController.swift */,
+				BAC1AEAF1F420AD900D4D158 /* WikiViewController.xib */,
+				BAC1AEB21F420BC900D4D158 /* HousesViewController.swift */,
+				BAC1AEB31F420BC900D4D158 /* HousesViewController.xib */,
+				BAC1AEB61F420C9200D4D158 /* UIKitExtensions.swift */,
 			);
 			path = NewWesteros;
 			sourceTree = "<group>";
@@ -122,6 +152,14 @@
 				BAC1AE8E1F379C6D00D4D158 /* targaryenSmall.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		BAC1AE971F41D34100D4D158 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BAC1AE981F41D35F00D4D158 /* Repository.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +250,13 @@
 			files = (
 				BAC1AE901F379C6D00D4D158 /* lannister.jpg in Resources */,
 				BAC1AE911F379C6D00D4D158 /* targaryenSmall.jpg in Resources */,
+				BAC1AEB11F420AD900D4D158 /* WikiViewController.xib in Resources */,
 				BAC1AE8F1F379C6D00D4D158 /* codeIsComing.png in Resources */,
 				BAC1AE721F377F5B00D4D158 /* LaunchScreen.storyboard in Resources */,
 				BAC1AE6F1F377F5B00D4D158 /* Assets.xcassets in Resources */,
+				BAC1AEA11F4207D700D4D158 /* HouseViewController.xib in Resources */,
+				BAC1AEAD1F42098700D4D158 /* MembersViewController.xib in Resources */,
+				BAC1AEB51F420BC900D4D158 /* HousesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +274,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC1AEA01F4207D700D4D158 /* HouseViewController.swift in Sources */,
 				BAC1AE941F3CE58C00D4D158 /* Person.swift in Sources */,
+				BAC1AEB71F420C9200D4D158 /* UIKitExtensions.swift in Sources */,
 				BAC1AE8A1F37938900D4D158 /* House.swift in Sources */,
+				BAC1AEB41F420BC900D4D158 /* HousesViewController.swift in Sources */,
 				BAC1AE681F377F5B00D4D158 /* AppDelegate.swift in Sources */,
+				BAC1AEAC1F42098700D4D158 /* MembersViewController.swift in Sources */,
+				BAC1AE991F41D35F00D4D158 /* Repository.swift in Sources */,
+				BAC1AEB01F420AD900D4D158 /* WikiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
