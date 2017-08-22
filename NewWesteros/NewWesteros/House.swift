@@ -40,7 +40,7 @@ extension House{
     
     func add(person: Person){
         
-        // No se agregan miembros repetidos
+        // No se agregan miembros repetidos, ni miembros que no pertenecen a la casa
         if (_members.contains(person)){
             return
         } else {

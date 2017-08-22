@@ -13,20 +13,31 @@ final class Repository{
     static let local = LocalFactory()
 }
 
-protocol HouseFactory {
+protocol WesterosFactory {
     
-    typealias Filter = (House)->Bool
+    typealias HouseFilter = (House)->Bool
+    typealias SeasonFilter = (Season)->Bool
     
     var houses : [House] {get}
+    var seasons : [Season] {get}
     
     func house(named: String)->House?
-    func houses(filteredBy: Filter) -> [House]
+    func houses(filteredBy: HouseFilter) -> [House]
+
+    func season(named: String)->Season?
+    func seasons(filteredBy: SeasonFilter) -> [Season]
+
 }
 
-final class LocalFactory : HouseFactory{
+final class LocalFactory : WesterosFactory{
     
-    func houses(filteredBy: Filter) -> [House] {
+    func houses(filteredBy: HouseFilter) -> [House] {
         let filtered = Repository.local.houses.filter(filteredBy)
+        return filtered
+    }
+    
+    func seasons(filteredBy: SeasonFilter) -> [Season] {
+        let filtered = Repository.local.seasons.filter(filteredBy)
         return filtered
     }
     
@@ -72,9 +83,54 @@ final class LocalFactory : HouseFactory{
         }
     }
     
+    var seasons: [Season]{
+        get{
+            let today = Date()
+            let season1 = Season(name: "Season 1", date: today)
+            let season2 = Season(name: "Season 2", date: today)
+            let season3 = Season(name: "Season 3", date: today)
+            let season4 = Season(name: "Season 4", date: today)
+            let season5 = Season(name: "Season 5", date: today)
+            let season6 = Season(name: "Season 6", date: today)
+
+            let episode1season1 = Episode(name: "Episode 1 Season 1", date: today, season: season1)
+            let episode2season1 = Episode(name: "Episode 2 Season 1", date: today, season: season1)
+            let episode1season2 = Episode(name: "Episode 1 Season 2", date: today, season: season2)
+            let episode2season2 = Episode(name: "Episode 2 Season 2", date: today, season: season2)
+            let episode1season3 = Episode(name: "Episode 1 Season 3", date: today, season: season3)
+            let episode2season3 = Episode(name: "Episode 2 Season 3", date: today, season: season3)
+            let episode1season4 = Episode(name: "Episode 1 Season 4", date: today, season: season4)
+            let episode2season4 = Episode(name: "Episode 2 Season 4", date: today, season: season4)
+            let episode1season5 = Episode(name: "Episode 1 Season 5", date: today, season: season5)
+            let episode2season5 = Episode(name: "Episode 2 Season 5", date: today, season: season5)
+            let episode1season6 = Episode(name: "Episode 1 Season 6", date: today, season: season6)
+            let episode2season6 = Episode(name: "Episode 2 Season 6", date: today, season: season6)
+
+            // Añadir episodios a las temporadas
+            season1.addEpisode(episode: episode1season1)
+            season1.addEpisode(episode: episode2season1)
+            season2.addEpisode(episode: episode1season2)
+            season2.addEpisode(episode: episode2season2)
+            season3.addEpisode(episode: episode1season3)
+            season3.addEpisode(episode: episode2season3)
+            season4.addEpisode(episode: episode1season4)
+            season4.addEpisode(episode: episode2season4)
+            season5.addEpisode(episode: episode1season5)
+            season5.addEpisode(episode: episode2season5)
+            season6.addEpisode(episode: episode1season6)
+            season6.addEpisode(episode: episode2season6)
+            
+            return [season1, season2, season3, season4, season5, season6].sorted()
+        }
+    }
+    
     func house(named: String) -> House? {
-        
         let house = houses.filter{$0.name.uppercased() == named.uppercased()}.first
         return house
+    }
+
+    func season(named: String) -> Season? {
+        let season = seasons.filter{$0.name.uppercased() == named.uppercased()}.first
+        return season
     }
 }

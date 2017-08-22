@@ -22,15 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = UIColor.cyan
         
-        // Creamos un origen de datos basado en el repositorio local
-        let houses = Repository.local.houses
+        // Creamos orígenes de datos para las clases House y Season basado en el repositorio local
+        // let houses = Repository.local.houses
+        let seasons = Repository.local.seasons
         
         // Creamos la tabla
-        let housesVC = HousesViewController(model: houses).wrappedInNavigation()
+        // let housesVC = HousesViewController(model: houses).wrappedInNavigation()
+        let seasonsVC = SeasonsViewController(model: seasons).wrappedInNavigation()
         
         // Asignamos el RootVC
-        window?.rootViewController = housesVC
-        
+        // window?.rootViewController = housesVC
+        window?.rootViewController = seasonsVC
         
         return true
     }

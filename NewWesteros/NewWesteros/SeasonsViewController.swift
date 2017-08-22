@@ -1,22 +1,22 @@
 //
-//  HousesViewController.swift
+//  SeasonsViewController.swift
 //  NewWesteros
 //
-//  Created by Alejandro Cabral Benavente on 14/08/2017.
+//  Created by Alejandro Cabral Benavente on 20/08/2017.
 //  Copyright © 2017 Smartech. All rights reserved.
 //
 
 import UIKit
 
-class HousesViewController: UITableViewController {
+class SeasonsViewController: UITableViewController {
+        
+    let model : [Season]
     
-    let model : [House]
-    
-    init(model: [House]){
+    init(model: [Season]){
         self.model = model
         super.init(nibName: nil, bundle: nil)
         
-        title = "Houses"
+        title = "Seasons"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,10 +36,10 @@ class HousesViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellID = "HouseCell"
+        let cellID = "SeasonCell"
         
         // Descubrir cuala es la casa que tenemos que mostrar
-        let house = model[indexPath.row]
+        let season = model[indexPath.row]
         
         // Crear una celda
         var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
@@ -49,9 +49,8 @@ class HousesViewController: UITableViewController {
             cell = UITableViewCell(style: .default, reuseIdentifier: cellID)
         }
         
-        // sincronizar House -> Cell
-        cell?.imageView?.image = house.sigil.image
-        cell?.textLabel?.text = house.name
+        // sincronizar Season -> Cell
+        cell?.textLabel?.text = season.name
         
         return cell!
     }
@@ -61,12 +60,12 @@ class HousesViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             didSelectRowAt indexPath: IndexPath) {
         
-        // Averiguamos cuala es la casa
-        let house = model[indexPath.row]
+        // Averiguamos cuala es la temporada
+        let season = model[indexPath.row]
         
         // la mostramos
-        let houseVC = HouseViewController(model: house)
-        navigationController?.pushViewController(houseVC, animated: true)
+        let SeasonVC = SeasonViewController(model: season.sortedEpisodes(), seasonName: season.name)
+        navigationController?.pushViewController(SeasonVC, animated: true)
         
     }
 }

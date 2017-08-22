@@ -1,22 +1,22 @@
 //
-//  MembersViewController.swift
+//  SeasonViewController.swift
 //  NewWesteros
 //
-//  Created by Alejandro Cabral Benavente on 14/08/2017.
+//  Created by Alejandro Cabral Benavente on 20/08/2017.
 //  Copyright © 2017 Smartech. All rights reserved.
 //
 
 import UIKit
 
-class MembersViewController: UITableViewController {
-
-    let model : [Person]
+class SeasonViewController: UITableViewController {
+        
+    let model : [Episode]
     
-    init(model: [Person], houseName: String){
+    init(model: [Episode], seasonName: String){
         self.model = model
         super.init(nibName: nil, bundle: nil)
         
-        title = "Members"
+        title = "Episodes"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -35,10 +35,10 @@ class MembersViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellID = "PersonCell"
+        let cellID = "EpisodeCell"
         
         // Obtenemos la persona que tenemos que mostrar
-        let person = model[indexPath.row]
+        let episode = model[indexPath.row]
         
         // Creamos una celda reutilizando o creándola a pelo
         var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
@@ -46,8 +46,8 @@ class MembersViewController: UITableViewController {
             cell = UITableViewCell(style: .default, reuseIdentifier: cellID)
         }
         
-        // sincronizamos House -> Cell
-        cell?.textLabel?.text = person.fullName
+        // sincronizamos Season -> Cell
+        cell?.textLabel?.text = episode.name
         
         return cell!
     }

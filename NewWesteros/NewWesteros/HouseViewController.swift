@@ -69,7 +69,7 @@ class HouseViewController: UIViewController {
     func syncViewWithModel(){
         
         // model -> view
-        houseNameView.text = "\(model.name) House"
+        houseNameView.text = model.name
         sigilImageView.image = model.sigil.image
         wordsTextView.text = model.words
         

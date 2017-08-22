@@ -28,7 +28,7 @@ class WikiViewController: UIViewController {
         
         activityView.isHidden = false
         activityView.startAnimating()
-        title = "\(model.name)'s Wiki"
+        title = "Wiki"
         browserView.delegate = self
         browserView.loadRequest(URLRequest(url: model.wikiURL))
         
