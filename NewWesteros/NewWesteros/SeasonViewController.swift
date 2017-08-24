@@ -16,7 +16,7 @@ class SeasonViewController: UITableViewController {
         self.model = model
         super.init(nibName: nil, bundle: nil)
         
-        title = "Episodes"
+        title = "\(seasonName) Episodes"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -47,7 +47,7 @@ class SeasonViewController: UITableViewController {
         }
         
         // sincronizamos Season -> Cell
-        cell?.textLabel?.text = episode.name
+        cell?.textLabel?.text = "\(episode.name) (\(episode.date.esFormatted()))"
         
         return cell!
     }

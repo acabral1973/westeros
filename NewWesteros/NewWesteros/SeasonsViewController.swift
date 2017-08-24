@@ -37,7 +37,7 @@ class SeasonsViewController: UITableViewController {
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellID = "SeasonCell"
-        
+                
         // Descubrir cuala es la casa que tenemos que mostrar
         let season = model[indexPath.row]
         
@@ -50,7 +50,7 @@ class SeasonsViewController: UITableViewController {
         }
         
         // sincronizar Season -> Cell
-        cell?.textLabel?.text = season.name
+        cell?.textLabel?.text = "\(season.name) (launched \(season.date.esFormatted()))"
         
         return cell!
     }

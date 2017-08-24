@@ -48,7 +48,7 @@ final class LocalFactory : WesterosFactory{
             let targaryenSigil = Sigil(image: #imageLiteral(resourceName: "targaryenSmall.jpg"), description: "Three headed dragon")
             
             
-            let starkURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Stark")!
+            let starkURL = URL(string: "https://awoiaf.westeros.org/images/f/f3/John_Picacio_Ned_Stark.jpg")!
             let lannisterURL = URL(string:"https://awoiaf.westeros.org/index.php/House_Lannister")!
             let targaryenURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Targaryen")!
             
@@ -85,26 +85,25 @@ final class LocalFactory : WesterosFactory{
     
     var seasons: [Season]{
         get{
-            let today = Date()
-            let season1 = Season(name: "Season 1", date: today)
-            let season2 = Season(name: "Season 2", date: today)
-            let season3 = Season(name: "Season 3", date: today)
-            let season4 = Season(name: "Season 4", date: today)
-            let season5 = Season(name: "Season 5", date: today)
-            let season6 = Season(name: "Season 6", date: today)
+            let season1 = Season(name: "Season 1", date: "17/04/2011".toDate())
+            let season2 = Season(name: "Season 2", date: "01/04/2012".toDate())
+            let season3 = Season(name: "Season 3", date: "31/03/2013".toDate())
+            let season4 = Season(name: "Season 4", date: "06/04/2014".toDate())
+            let season5 = Season(name: "Season 5", date: "12/04/2015".toDate())
+            let season6 = Season(name: "Season 6", date: "24/04/2016".toDate())
 
-            let episode1season1 = Episode(name: "Episode 1 Season 1", date: today, season: season1)
-            let episode2season1 = Episode(name: "Episode 2 Season 1", date: today, season: season1)
-            let episode1season2 = Episode(name: "Episode 1 Season 2", date: today, season: season2)
-            let episode2season2 = Episode(name: "Episode 2 Season 2", date: today, season: season2)
-            let episode1season3 = Episode(name: "Episode 1 Season 3", date: today, season: season3)
-            let episode2season3 = Episode(name: "Episode 2 Season 3", date: today, season: season3)
-            let episode1season4 = Episode(name: "Episode 1 Season 4", date: today, season: season4)
-            let episode2season4 = Episode(name: "Episode 2 Season 4", date: today, season: season4)
-            let episode1season5 = Episode(name: "Episode 1 Season 5", date: today, season: season5)
-            let episode2season5 = Episode(name: "Episode 2 Season 5", date: today, season: season5)
-            let episode1season6 = Episode(name: "Episode 1 Season 6", date: today, season: season6)
-            let episode2season6 = Episode(name: "Episode 2 Season 6", date: today, season: season6)
+            let episode1season1 = Episode(name: "E1: \"Winter Is Coming\"", date: "17/04/2011".toDate(), season: season1)
+            let episode2season1 = Episode(name: "E2: \"The Kingsroad\"", date: "24/04/2011".toDate(), season: season1)
+            let episode1season2 = Episode(name: "E1: \"The North Remembers\"", date: "01/04/2012".toDate(), season: season2)
+            let episode2season2 = Episode(name: "E2: \"The Night Lands\"", date: "08/04/2012".toDate(), season: season2)
+            let episode1season3 = Episode(name: "E1: \"Valar Dohaeris\"", date: "31/03/2013".toDate(), season: season3)
+            let episode2season3 = Episode(name: "E2: \"Dark Wings, Dark Words\"", date: "07/04/2013".toDate(), season: season3)
+            let episode1season4 = Episode(name: "E1: \"Two Swords\"", date: "06/04/2014".toDate(), season: season4)
+            let episode2season4 = Episode(name: "E2: \"The Lion and the Rose\"", date: "13/04/2014".toDate(), season: season4)
+            let episode1season5 = Episode(name: "E1: \"The Wars to Come\"", date: "12/04/2015".toDate(), season: season5)
+            let episode2season5 = Episode(name: "E2: \"The House of Black and White\"", date: "19/04/2015".toDate(), season: season5)
+            let episode1season6 = Episode(name: "E1: \"The Red Woman\"", date: "24/04/2016".toDate(), season: season6)
+            let episode2season6 = Episode(name: "E2: \"Home\"", date: "01/05/2016".toDate(), season: season6)
 
             // Añadir episodios a las temporadas
             season1.addEpisode(episode: episode1season1)

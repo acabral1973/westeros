@@ -15,7 +15,6 @@ class HousesViewController: UITableViewController {
     init(model: [House]){
         self.model = model
         super.init(nibName: nil, bundle: nil)
-        
         title = "Houses"
     }
     

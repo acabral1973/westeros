@@ -12,27 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    
-    
+        
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // Crear Window
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.backgroundColor = UIColor.cyan
         
-        // Creamos orígenes de datos para las clases House y Season basado en el repositorio local
-        // let houses = Repository.local.houses
+        // Creo orígenes de datos para Temporadas y Casas basado en el repositorio local
+        let houses = Repository.local.houses
         let seasons = Repository.local.seasons
         
-        // Creamos la tabla
-        // let housesVC = HousesViewController(model: houses).wrappedInNavigation()
+        // Creo los controladores para Temporadas y Casas
+        let housesVC = HousesViewController(model: houses).wrappedInNavigation()
         let seasonsVC = SeasonsViewController(model: seasons).wrappedInNavigation()
         
-        // Asignamos el RootVC
-        // window?.rootViewController = housesVC
-        window?.rootViewController = seasonsVC
+        // Creo el combinador y personalizo aspecto
+        let mainVC = UITabBarController()
+        
+        // Asigno los controladores para Temporadas y Casas como Items del combinador
+        mainVC.viewControllers = [housesVC, seasonsVC]
+        
+        // Declaro el combinador como controlador principal
+        window?.rootViewController = mainVC
         
         return true
     }
@@ -58,7 +60,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-    
 }
 
