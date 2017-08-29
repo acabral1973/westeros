@@ -16,6 +16,7 @@ class HouseViewController: UIViewController {
     
     @IBOutlet weak var sigilImageView: UIImageView!
     
+    @IBOutlet weak var membersCountTextView: UILabel!
     
     let model : House
     
@@ -69,10 +70,10 @@ class HouseViewController: UIViewController {
     func syncViewWithModel(){
         
         // model -> view
-        houseNameView.text = model.name
+        houseNameView.text = "\(model.name) House"
         sigilImageView.image = model.sigil.image
         wordsTextView.text = model.words
-        
+        membersCountTextView.text = "Members count: \(model.count)"
         
     }
     

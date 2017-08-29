@@ -43,12 +43,12 @@ final class LocalFactory : WesterosFactory{
     
     var houses: [House]{
         get{
-            let starkSigil = Sigil(image: #imageLiteral(resourceName: "codeIsComing.png"), description: "Direwolf")
-            let lannisterSigil = Sigil(image: #imageLiteral(resourceName: "lannister.jpg"), description: "Rampant Lion")
-            let targaryenSigil = Sigil(image: #imageLiteral(resourceName: "targaryenSmall.jpg"), description: "Three headed dragon")
+            let starkSigil = Sigil(image: #imageLiteral(resourceName: "starkImage.png"), description: "Direwolf")
+            let lannisterSigil = Sigil(image: #imageLiteral(resourceName: "lannisterImage.jpg"), description: "Rampant Lion")
+            let targaryenSigil = Sigil(image: #imageLiteral(resourceName: "targaryenImage.jpg"), description: "Three headed dragon")
             
             
-            let starkURL = URL(string: "https://awoiaf.westeros.org/images/f/f3/John_Picacio_Ned_Stark.jpg")!
+            let starkURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Stark")!
             let lannisterURL = URL(string:"https://awoiaf.westeros.org/index.php/House_Lannister")!
             let targaryenURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Targaryen")!
             

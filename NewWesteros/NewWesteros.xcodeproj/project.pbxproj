@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BA153AC71F4DE6D000A424C5 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA153AC61F4DE6D000A424C5 /* FoundationExtensions.swift */; };
+		BA37742C1F55CB1F006DF5F1 /* housesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA37742B1F55CB1F006DF5F1 /* housesIcon.png */; };
+		BA37742E1F55CB98006DF5F1 /* seasonsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA37742D1F55CB98006DF5F1 /* seasonsIcon.png */; };
 		BAC1AE681F377F5B00D4D158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE671F377F5B00D4D158 /* AppDelegate.swift */; };
 		BAC1AE6F1F377F5B00D4D158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE6E1F377F5B00D4D158 /* Assets.xcassets */; };
 		BAC1AE721F377F5B00D4D158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE701F377F5B00D4D158 /* LaunchScreen.storyboard */; };
 		BAC1AE881F378F5700D4D158 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE871F378F5700D4D158 /* HouseTests.swift */; };
 		BAC1AE8A1F37938900D4D158 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE891F37938900D4D158 /* House.swift */; };
-		BAC1AE8F1F379C6D00D4D158 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE8C1F379C6D00D4D158 /* codeIsComing.png */; };
-		BAC1AE901F379C6D00D4D158 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE8D1F379C6D00D4D158 /* lannister.jpg */; };
-		BAC1AE911F379C6D00D4D158 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE8E1F379C6D00D4D158 /* targaryenSmall.jpg */; };
+		BAC1AE8F1F379C6D00D4D158 /* starkImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE8C1F379C6D00D4D158 /* starkImage.png */; };
+		BAC1AE901F379C6D00D4D158 /* lannisterImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE8D1F379C6D00D4D158 /* lannisterImage.jpg */; };
+		BAC1AE911F379C6D00D4D158 /* targaryenImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE8E1F379C6D00D4D158 /* targaryenImage.jpg */; };
 		BAC1AE941F3CE58C00D4D158 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE931F3CE58C00D4D158 /* Person.swift */; };
 		BAC1AE961F3F7D6700D4D158 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE951F3F7D6700D4D158 /* PersonTest.swift */; };
 		BAC1AE991F41D35F00D4D158 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE981F41D35F00D4D158 /* Repository.swift */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		BA153AC61F4DE6D000A424C5 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		BA37742B1F55CB1F006DF5F1 /* housesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = housesIcon.png; sourceTree = "<group>"; };
+		BA37742D1F55CB98006DF5F1 /* seasonsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seasonsIcon.png; sourceTree = "<group>"; };
 		BAC1AE641F377F5B00D4D158 /* NewWesteros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewWesteros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC1AE671F377F5B00D4D158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC1AE6E1F377F5B00D4D158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,9 +63,9 @@
 		BAC1AE7E1F377F5B00D4D158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAC1AE871F378F5700D4D158 /* HouseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		BAC1AE891F37938900D4D158 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
-		BAC1AE8C1F379C6D00D4D158 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
-		BAC1AE8D1F379C6D00D4D158 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
-		BAC1AE8E1F379C6D00D4D158 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
+		BAC1AE8C1F379C6D00D4D158 /* starkImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starkImage.png; sourceTree = "<group>"; };
+		BAC1AE8D1F379C6D00D4D158 /* lannisterImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannisterImage.jpg; sourceTree = "<group>"; };
+		BAC1AE8E1F379C6D00D4D158 /* targaryenImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenImage.jpg; sourceTree = "<group>"; };
 		BAC1AE931F3CE58C00D4D158 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BAC1AE951F3F7D6700D4D158 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 		BAC1AE981F41D35F00D4D158 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -174,9 +178,11 @@
 		BAC1AE921F379C7900D4D158 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BAC1AE8C1F379C6D00D4D158 /* codeIsComing.png */,
-				BAC1AE8D1F379C6D00D4D158 /* lannister.jpg */,
-				BAC1AE8E1F379C6D00D4D158 /* targaryenSmall.jpg */,
+				BA37742D1F55CB98006DF5F1 /* seasonsIcon.png */,
+				BA37742B1F55CB1F006DF5F1 /* housesIcon.png */,
+				BAC1AE8C1F379C6D00D4D158 /* starkImage.png */,
+				BAC1AE8D1F379C6D00D4D158 /* lannisterImage.jpg */,
+				BAC1AE8E1F379C6D00D4D158 /* targaryenImage.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -275,16 +281,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC1AE901F379C6D00D4D158 /* lannister.jpg in Resources */,
+				BAC1AE901F379C6D00D4D158 /* lannisterImage.jpg in Resources */,
 				BAC1AECD1F4A638300D4D158 /* SeasonViewController.xib in Resources */,
-				BAC1AE911F379C6D00D4D158 /* targaryenSmall.jpg in Resources */,
+				BAC1AE911F379C6D00D4D158 /* targaryenImage.jpg in Resources */,
+				BA37742E1F55CB98006DF5F1 /* seasonsIcon.png in Resources */,
 				BAC1AEB11F420AD900D4D158 /* WikiViewController.xib in Resources */,
-				BAC1AE8F1F379C6D00D4D158 /* codeIsComing.png in Resources */,
+				BAC1AE8F1F379C6D00D4D158 /* starkImage.png in Resources */,
 				BAC1AE721F377F5B00D4D158 /* LaunchScreen.storyboard in Resources */,
 				BAC1AE6F1F377F5B00D4D158 /* Assets.xcassets in Resources */,
 				BAC1AEA11F4207D700D4D158 /* HouseViewController.xib in Resources */,
 				BAC1AEC51F4A229300D4D158 /* SeasonsViewController.xib in Resources */,
 				BAC1AEAD1F42098700D4D158 /* MembersViewController.xib in Resources */,
+				BA37742C1F55CB1F006DF5F1 /* housesIcon.png in Resources */,
 				BAC1AEB51F420BC900D4D158 /* HousesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,9 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Creo los controladores para Temporadas y Casas
         let housesVC = HousesViewController(model: houses).wrappedInNavigation()
+        housesVC.tabBarItem.title = "Houses"
+        housesVC.tabBarItem.image = UIImage(named: "housesIcon")
         let seasonsVC = SeasonsViewController(model: seasons).wrappedInNavigation()
+        seasonsVC.tabBarItem.title = "Seasons"
+        seasonsVC.tabBarItem.image = UIImage(named: "seasonsIcon")
         
         // Creo el combinador y personalizo aspecto
+        UITabBar.appearance().barTintColor = UIColor.black
+        UITabBar.appearance().tintColor = UIColor.white
         let mainVC = UITabBarController()
         
         // Asigno los controladores para Temporadas y Casas como Items del combinador
@@ -59,6 +65,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func didFinishLaunchingWithOptions(_ application: UIApplication) {
+        let tabBarAppearance = UITabBar.appearance()
+        
+        tabBarAppearance.tintColor = UIColor.white
+        tabBarAppearance.barTintColor = UIColor.black
     }
 }
 

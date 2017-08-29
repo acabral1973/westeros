@@ -15,8 +15,7 @@ class MembersViewController: UITableViewController {
     init(model: [Person], houseName: String){
         self.model = model
         super.init(nibName: nil, bundle: nil)
-        
-        title = "Members"
+        title = "All \(houseName)s"
     }
     
     required init?(coder aDecoder: NSCoder) {
