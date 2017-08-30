@@ -25,7 +25,7 @@ class HouseTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        starkImage = #imageLiteral(resourceName: "codeIsComing.png")
+        starkImage = #imageLiteral(resourceName: "starkImage.png")
         starkSigil = Sigil(image: starkImage, description: "Direwolf")
         starkHouse = House(name: "Stark",
                            sigil: starkSigil,
@@ -34,7 +34,7 @@ class HouseTests: XCTestCase {
         robb = Person(name: "Robb", alias: "The young wolf", house: starkHouse)
         arya = Person(name: "Arya", house: starkHouse)
         
-        lannisterImage = #imageLiteral(resourceName: "lannister.jpg")
+        lannisterImage = #imageLiteral(resourceName: "lannisterImage.jpg")
         lannisterSigil = Sigil(image: lannisterImage, description: "Rampant Lion")
         lannisterHouse = House(name: "Lannister",
                                sigil: lannisterSigil,

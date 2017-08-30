@@ -10,6 +10,8 @@
 		BA153AC71F4DE6D000A424C5 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA153AC61F4DE6D000A424C5 /* FoundationExtensions.swift */; };
 		BA37742C1F55CB1F006DF5F1 /* housesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA37742B1F55CB1F006DF5F1 /* housesIcon.png */; };
 		BA37742E1F55CB98006DF5F1 /* seasonsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA37742D1F55CB98006DF5F1 /* seasonsIcon.png */; };
+		BA3774361F56D330006DF5F1 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3774341F56D330006DF5F1 /* EpisodeViewController.swift */; };
+		BA3774371F56D330006DF5F1 /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3774351F56D330006DF5F1 /* EpisodeViewController.xib */; };
 		BAC1AE681F377F5B00D4D158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE671F377F5B00D4D158 /* AppDelegate.swift */; };
 		BAC1AE6F1F377F5B00D4D158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE6E1F377F5B00D4D158 /* Assets.xcassets */; };
 		BAC1AE721F377F5B00D4D158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE701F377F5B00D4D158 /* LaunchScreen.storyboard */; };
@@ -54,6 +56,8 @@
 		BA153AC61F4DE6D000A424C5 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		BA37742B1F55CB1F006DF5F1 /* housesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = housesIcon.png; sourceTree = "<group>"; };
 		BA37742D1F55CB98006DF5F1 /* seasonsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seasonsIcon.png; sourceTree = "<group>"; };
+		BA3774341F56D330006DF5F1 /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
+		BA3774351F56D330006DF5F1 /* EpisodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
 		BAC1AE641F377F5B00D4D158 /* NewWesteros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewWesteros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC1AE671F377F5B00D4D158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC1AE6E1F377F5B00D4D158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA37742F1F56C0D0006DF5F1 /* HousesComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BAC1AE9E1F4207D700D4D158 /* HouseViewController.swift */,
+				BAC1AE9F1F4207D700D4D158 /* HouseViewController.xib */,
+				BAC1AEAA1F42098700D4D158 /* MembersViewController.swift */,
+				BAC1AEAB1F42098700D4D158 /* MembersViewController.xib */,
+				BAC1AEAE1F420AD900D4D158 /* WikiViewController.swift */,
+				BAC1AEAF1F420AD900D4D158 /* WikiViewController.xib */,
+				BAC1AEB21F420BC900D4D158 /* HousesViewController.swift */,
+				BAC1AEB31F420BC900D4D158 /* HousesViewController.xib */,
+			);
+			name = HousesComponents;
+			sourceTree = "<group>";
+		};
+		BA3774301F56C0FC006DF5F1 /* SeasonComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BAC1AEC21F4A229300D4D158 /* SeasonsViewController.swift */,
+				BAC1AEC31F4A229300D4D158 /* SeasonsViewController.xib */,
+				BAC1AECA1F4A638300D4D158 /* SeasonViewController.swift */,
+				BAC1AECB1F4A638300D4D158 /* SeasonViewController.xib */,
+				BA3774341F56D330006DF5F1 /* EpisodeViewController.swift */,
+				BA3774351F56D330006DF5F1 /* EpisodeViewController.xib */,
+			);
+			name = SeasonComponents;
+			sourceTree = "<group>";
+		};
+		BA3774311F56C128006DF5F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA153AC61F4DE6D000A424C5 /* FoundationExtensions.swift */,
+				BAC1AEB61F420C9200D4D158 /* UIKitExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		BAC1AE5B1F377F5B00D4D158 = {
 			isa = PBXGroup;
 			children = (
@@ -134,20 +175,9 @@
 				BAC1AE701F377F5B00D4D158 /* LaunchScreen.storyboard */,
 				BAC1AE731F377F5B00D4D158 /* Info.plist */,
 				BAC1AE8B1F37939900D4D158 /* Models */,
-				BAC1AE9E1F4207D700D4D158 /* HouseViewController.swift */,
-				BAC1AE9F1F4207D700D4D158 /* HouseViewController.xib */,
-				BAC1AEAA1F42098700D4D158 /* MembersViewController.swift */,
-				BAC1AEAB1F42098700D4D158 /* MembersViewController.xib */,
-				BAC1AEAE1F420AD900D4D158 /* WikiViewController.swift */,
-				BAC1AEAF1F420AD900D4D158 /* WikiViewController.xib */,
-				BAC1AEB21F420BC900D4D158 /* HousesViewController.swift */,
-				BAC1AEB31F420BC900D4D158 /* HousesViewController.xib */,
-				BAC1AEB61F420C9200D4D158 /* UIKitExtensions.swift */,
-				BAC1AEC21F4A229300D4D158 /* SeasonsViewController.swift */,
-				BAC1AEC31F4A229300D4D158 /* SeasonsViewController.xib */,
-				BAC1AECA1F4A638300D4D158 /* SeasonViewController.swift */,
-				BAC1AECB1F4A638300D4D158 /* SeasonViewController.xib */,
-				BA153AC61F4DE6D000A424C5 /* FoundationExtensions.swift */,
+				BA37742F1F56C0D0006DF5F1 /* HousesComponents */,
+				BA3774311F56C128006DF5F1 /* Extensions */,
+				BA3774301F56C0FC006DF5F1 /* SeasonComponents */,
 			);
 			path = NewWesteros;
 			sourceTree = "<group>";
@@ -285,6 +315,7 @@
 				BAC1AECD1F4A638300D4D158 /* SeasonViewController.xib in Resources */,
 				BAC1AE911F379C6D00D4D158 /* targaryenImage.jpg in Resources */,
 				BA37742E1F55CB98006DF5F1 /* seasonsIcon.png in Resources */,
+				BA3774371F56D330006DF5F1 /* EpisodeViewController.xib in Resources */,
 				BAC1AEB11F420AD900D4D158 /* WikiViewController.xib in Resources */,
 				BAC1AE8F1F379C6D00D4D158 /* starkImage.png in Resources */,
 				BAC1AE721F377F5B00D4D158 /* LaunchScreen.storyboard in Resources */,
@@ -315,6 +346,7 @@
 				BAC1AEA01F4207D700D4D158 /* HouseViewController.swift in Sources */,
 				BAC1AE941F3CE58C00D4D158 /* Person.swift in Sources */,
 				BAC1AEB91F4238EB00D4D158 /* Season.swift in Sources */,
+				BA3774361F56D330006DF5F1 /* EpisodeViewController.swift in Sources */,
 				BAC1AEB71F420C9200D4D158 /* UIKitExtensions.swift in Sources */,
 				BAC1AE8A1F37938900D4D158 /* House.swift in Sources */,
 				BAC1AEC41F4A229300D4D158 /* SeasonsViewController.swift in Sources */,

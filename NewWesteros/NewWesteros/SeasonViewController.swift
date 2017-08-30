@@ -37,7 +37,7 @@ class SeasonViewController: UITableViewController {
         
         let cellID = "EpisodeCell"
         
-        // Obtenemos la persona que tenemos que mostrar
+        // Obtenemos el episodio que tenemos que mostrar en la celda
         let episode = model[indexPath.row]
         
         // Creamos una celda reutilizando o creándola a pelo
@@ -46,9 +46,23 @@ class SeasonViewController: UITableViewController {
             cell = UITableViewCell(style: .default, reuseIdentifier: cellID)
         }
         
-        // sincronizamos Season -> Cell
+        // envio los datos del modelo (episodio) a la celda
         cell?.textLabel?.text = "\(episode.name) (\(episode.date.esFormatted()))"
         
         return cell!
     }
+    
+    // función que controla que hacer cuando el usuario pushea una celda (mostrar episodio)
+    override func tableView(_ tableView: UITableView,
+                            didSelectRowAt indexPath: IndexPath) {
+        
+        // Averiguamos cuala es el episodio seleccionado
+        let episode = model[indexPath.row]
+        
+        // creo un EpisodeViewController con los datos del episodio seleccionado y lo pusheo
+        let episodeVC = EpisodeViewController(model: episode)
+        navigationController?.pushViewController(episodeVC, animated: true)
+        
+    }
+
 }

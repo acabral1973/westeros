@@ -57,6 +57,7 @@ class HouseViewController: UIViewController {
         
         
     }
+    
     @objc func displayWiki(){
         
         // Creamos un WikiVC

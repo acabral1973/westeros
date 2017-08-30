@@ -26,13 +26,13 @@ class PersonTest: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        starkImage = #imageLiteral(resourceName: "codeIsComing.png")
+        starkImage = #imageLiteral(resourceName: "starkImage.png")
         starkSigil = Sigil(image: starkImage, description: "Direwolf")
         starkHouse = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!", url:URL(string:"http://awoiaf.westeros.org/index.php/House_Stark")!)
         robb = Person(name: "Robb", alias: "The young wolf", house: starkHouse)
         arya = Person(name: "Arya", house: starkHouse)
         
-        lannisterImage = #imageLiteral(resourceName: "lannister.jpg")
+        lannisterImage = #imageLiteral(resourceName: "lannisterImage.jpg")
         lannisterSigil = Sigil(image: lannisterImage, description: "Rampant Lion")
         lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Hear me roar!", url:URL(string:"http://awoiaf.westeros.org/index.php/House_Lannister")!)
         tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannisterHouse)
