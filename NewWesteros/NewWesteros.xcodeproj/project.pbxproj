@@ -12,6 +12,8 @@
 		BA37742E1F55CB98006DF5F1 /* seasonsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA37742D1F55CB98006DF5F1 /* seasonsIcon.png */; };
 		BA3774361F56D330006DF5F1 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3774341F56D330006DF5F1 /* EpisodeViewController.swift */; };
 		BA3774371F56D330006DF5F1 /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3774351F56D330006DF5F1 /* EpisodeViewController.xib */; };
+		BA3774391F5866B7006DF5F1 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3774381F5866B7006DF5F1 /* ArrayDataSource.swift */; };
+		BA37743C1F586D58006DF5F1 /* ArrayDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA37743B1F586D58006DF5F1 /* ArrayDataSourceTests.swift */; };
 		BAC1AE681F377F5B00D4D158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1AE671F377F5B00D4D158 /* AppDelegate.swift */; };
 		BAC1AE6F1F377F5B00D4D158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE6E1F377F5B00D4D158 /* Assets.xcassets */; };
 		BAC1AE721F377F5B00D4D158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC1AE701F377F5B00D4D158 /* LaunchScreen.storyboard */; };
@@ -58,6 +60,8 @@
 		BA37742D1F55CB98006DF5F1 /* seasonsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seasonsIcon.png; sourceTree = "<group>"; };
 		BA3774341F56D330006DF5F1 /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
 		BA3774351F56D330006DF5F1 /* EpisodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
+		BA3774381F5866B7006DF5F1 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		BA37743B1F586D58006DF5F1 /* ArrayDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceTests.swift; sourceTree = "<group>"; };
 		BAC1AE641F377F5B00D4D158 /* NewWesteros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewWesteros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC1AE671F377F5B00D4D158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC1AE6E1F377F5B00D4D158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +151,14 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		BA37743A1F586D28006DF5F1 /* GenericComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BA3774381F5866B7006DF5F1 /* ArrayDataSource.swift */,
+			);
+			name = GenericComponents;
+			sourceTree = "<group>";
+		};
 		BAC1AE5B1F377F5B00D4D158 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +190,7 @@
 				BA37742F1F56C0D0006DF5F1 /* HousesComponents */,
 				BA3774311F56C128006DF5F1 /* Extensions */,
 				BA3774301F56C0FC006DF5F1 /* SeasonComponents */,
+				BA37743A1F586D28006DF5F1 /* GenericComponents */,
 			);
 			path = NewWesteros;
 			sourceTree = "<group>";
@@ -190,6 +203,7 @@
 				BAC1AE951F3F7D6700D4D158 /* PersonTest.swift */,
 				BAC1AEBC1F44BB1600D4D158 /* SeasonTests.swift */,
 				BAC1AEBE1F44BEAD00D4D158 /* EpisodeTests.swift */,
+				BA37743B1F586D58006DF5F1 /* ArrayDataSourceTests.swift */,
 			);
 			path = NewWesterosTests;
 			sourceTree = "<group>";
@@ -352,6 +366,7 @@
 				BAC1AEC41F4A229300D4D158 /* SeasonsViewController.swift in Sources */,
 				BAC1AEBB1F44B12100D4D158 /* Episode.swift in Sources */,
 				BAC1AEB41F420BC900D4D158 /* HousesViewController.swift in Sources */,
+				BA3774391F5866B7006DF5F1 /* ArrayDataSource.swift in Sources */,
 				BAC1AE681F377F5B00D4D158 /* AppDelegate.swift in Sources */,
 				BAC1AEAC1F42098700D4D158 /* MembersViewController.swift in Sources */,
 				BAC1AE991F41D35F00D4D158 /* Repository.swift in Sources */,
@@ -368,6 +383,7 @@
 				BAC1AEBF1F44BEAD00D4D158 /* EpisodeTests.swift in Sources */,
 				BAC1AE961F3F7D6700D4D158 /* PersonTest.swift in Sources */,
 				BAC1AE881F378F5700D4D158 /* HouseTests.swift in Sources */,
+				BA37743C1F586D58006DF5F1 /* ArrayDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
