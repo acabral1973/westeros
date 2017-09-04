@@ -7,10 +7,10 @@ También he incluído en el código, algunos detalles que me parecían relevante
 <br>
 
 ## Uso de genéricos
-La verdad es que no me quedaron claros algunos detalles del final, y no he tenido tiempo de repasar el tema detenidamente (me pondré con ello este fin de semana para llevarlos aprendidos al curso de iOS Avanzado).  
-Debido a ello preferí llevar a cabo la entrega duplicando código, lo que la verdad no me gusta, pero, ya cerraré este tema este fin de semana (espero).  
-
-**Nota: Durante estos días estaré trabajando sobre el repo en una rama de desarrollo a la que llamaré *genericos*, la rama *master* corresponde a la versión "estable" actual.**  
+Esta rama tiene todas las tablas implementadas con *genericos*, he usado *ArrayTableView* para sustituir los siguientes *ViewControllers*:  
+* *HousesViewController*: que muestra una tabla con todas las casas (*House*)
+* *SeasonsViewController*: que muestra una tabla con todas las temporadas (*Season*)
+* *MembersViewController*: que muestra una tabla con todos los miembros (*Person*) de una casa (*House*)  
 <br>
 
 **Salu2 :)**  
