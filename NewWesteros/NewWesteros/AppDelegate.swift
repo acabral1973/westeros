@@ -21,13 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Creo orígenes de datos para Temporadas y Casas basado en el repositorio local
         let houses = Repository.local.houses
-        let seasons = Repository.local.seasons
+        let season = Repository.local.seasons
         
-        // Creo los controladores para Temporadas y Casas
-        let housesVC = HousesViewController(model: houses).wrappedInNavigation()
+        // Creo los datasources
+        let housesDataSource = WesterosDataSources.houseDataSource(model: houses)
+        let seasonsDataSource = WesterosDataSources.seasonDataSource(model: season)
+        
+        // Creo los controladores (tablas) para Temporadas y Casas
+        let housesVC = ArrayTableViewController(dataSource: housesDataSource, title: "All houses", style: .plain, delegate: HousesDelegate()).wrappedInNavigation()
         housesVC.tabBarItem.title = "Houses"
         housesVC.tabBarItem.image = UIImage(named: "housesIcon")
-        let seasonsVC = SeasonsViewController(model: seasons).wrappedInNavigation()
+        let seasonsVC = ArrayTableViewController(dataSource: seasonsDataSource, title: "All Seasons", style: .plain, delegate: SeasonsDelegate()).wrappedInNavigation()
         seasonsVC.tabBarItem.title = "Seasons"
         seasonsVC.tabBarItem.image = UIImage(named: "seasonsIcon")
         

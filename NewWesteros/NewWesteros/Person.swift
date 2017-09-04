@@ -26,7 +26,16 @@ final class Person{
         }
     }
     
-
+    var fulNameAndAlias: String{
+    
+        get{
+            if alias == ""{
+                return fullName
+            }
+            return "\(fullName) (\"\(alias)\")"
+        }
+    }
+    
     init(name: String, alias: String? , house: House) {
         
         self.name = name

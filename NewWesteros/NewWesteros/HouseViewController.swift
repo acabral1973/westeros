@@ -49,13 +49,12 @@ class HouseViewController: UIViewController {
     
     @objc func displayMembers(){
         
-        // Creamos el membersVC
-        let membersVC = MembersViewController(model: model.sortedMembers(), houseName: model.name)
-        
-        // LO pusheamos
+        // Creamos el membersVC instanciando la clase genérica ArrayTableViewController
+        let membersDataSource = WesterosDataSources.personDataSource(model: model.sortedMembers())
+        let membersVC = ArrayTableViewController(dataSource: membersDataSource, title: model.name, style: .plain)   //no pasamos delegado porque la lista de miembros no hace nada al pushear sobre una celda
+            
+         // LO pusheamos
         navigationController?.pushViewController(membersVC, animated: true)
-        
-        
     }
     
     @objc func displayWiki(){

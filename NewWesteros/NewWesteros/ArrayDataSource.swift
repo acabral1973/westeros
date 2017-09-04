@@ -16,7 +16,7 @@ final class ArrayDataSource<Element> : NSObject, UITableViewDataSource{
     
     typealias Elements = [Element]                                      //Define que el datasource es un array de "algo"
     typealias CellMaker = (Element, UITableView) -> UITableViewCell     //indica que la clausura recibirá un elemento (donde estan los datos a mostrar)
-                                                                        //y una tabla y devuelve una celda
+                                                                        //y una tabla (la necesita para lo de reaprovechar celdas) y devuelve una celda
     
     private let _model : Elements
     private let _cellMaker : CellMaker
@@ -27,7 +27,7 @@ final class ArrayDataSource<Element> : NSObject, UITableViewDataSource{
         
         super.init()
     }
-    
+
     // indica cuantas secciones tiene la tabla
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -36,6 +36,11 @@ final class ArrayDataSource<Element> : NSObject, UITableViewDataSource{
     // indica cuantas filas tiene la sección
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _model.count
+    }
+
+    // Devuelve el elemento seleccionado en una tabla
+    func element(atIndexPath indexPath: IndexPath) -> Element{
+        return _model[indexPath.row]
     }
     
     // indica como se construye la celda
